@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+        <style>
+            body {
+            margin: 0;
+            min-width: 250px;
+            font-family: 'Titillium Web';font-size: 22px;
+            background-color: #f7e5ca
+            }
+
+            .myButton {
+            background-color: #534738; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            }
+
+            .myButton:hover {
+            background-color: rgb(252, 235, 199);
+            color: black
+            }
+        </style>
+</head>
+<body>
+
+<div style = "text-align: center">
+<h1>Write to your heart's content! </h1>
+Notes:<br>
+<textarea id="mytextarea">
+</textarea>
+
+<p> Click enter once finished. </p>
+<button type= "button" onclick="myFunction()">Enter
+</button>
+<p id="demo"></p>
+
+<br><br>
+
+<a href = "home.html" class = "myButton" role = 'button'> Home </a>
+
+<br><br>
+
+
+</div>
+
+<script>
+	function myFunction(){
+		var x =
+		document.getElementById("mytextarea").value;
+		document.getElementById("demo").innerHTML = x;
+	}
+</script>
+</body>
+</html>
